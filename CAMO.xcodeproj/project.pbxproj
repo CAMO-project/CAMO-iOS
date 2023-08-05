@@ -16,7 +16,11 @@
 		F22F07B02A7CE7FA009136EF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07AF2A7CE7FA009136EF /* SplashView.swift */; };
 		F22F07B22A7CE860009136EF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07B12A7CE860009136EF /* StartView.swift */; };
 		F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07B32A7CECB9009136EF /* HomeView.swift */; };
-		F22F07B62A7CECE9009136EF /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07B52A7CECE9009136EF /* TabView.swift */; };
+		F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07B52A7CECE9009136EF /* BottomTabView.swift */; };
+		F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07B82A7DFC03009136EF /* CafeView.swift */; };
+		F22F07BB2A7DFC10009136EF /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07BA2A7DFC10009136EF /* CouponView.swift */; };
+		F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07BC2A7DFC20009136EF /* ProfileView.swift */; };
+		F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07C02A7E7B42009136EF /* Permissions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +53,11 @@
 		F22F07AF2A7CE7FA009136EF /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		F22F07B12A7CE860009136EF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F22F07B32A7CECB9009136EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		F22F07B52A7CECE9009136EF /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		F22F07B52A7CECE9009136EF /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		F22F07B82A7DFC03009136EF /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
+		F22F07BA2A7DFC10009136EF /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
+		F22F07BC2A7DFC20009136EF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F22F07C02A7E7B42009136EF /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 				F22F07832A793AD0009136EF /* CAMOApp.swift */,
 				F22F07872A793AD1009136EF /* Assets.xcassets */,
 				F22F07892A793AD1009136EF /* Preview Content */,
+				F22F07C02A7E7B42009136EF /* Permissions.swift */,
 			);
 			path = CAMO;
 			sourceTree = "<group>";
@@ -137,8 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F22F07AE2A7CE7E8009136EF /* Start */,
-				F22F07B32A7CECB9009136EF /* HomeView.swift */,
-				F22F07B52A7CECE9009136EF /* TabView.swift */,
+				F22F07B72A7DFBDE009136EF /* Tab */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +158,18 @@
 				F22F07B12A7CE860009136EF /* StartView.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		F22F07B72A7DFBDE009136EF /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07B52A7CECE9009136EF /* BottomTabView.swift */,
+				F22F07B32A7CECB9009136EF /* HomeView.swift */,
+				F22F07B82A7DFC03009136EF /* CafeView.swift */,
+				F22F07BA2A7DFC10009136EF /* CouponView.swift */,
+				F22F07BC2A7DFC20009136EF /* ProfileView.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,11 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22F07B62A7CECE9009136EF /* TabView.swift in Sources */,
+				F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */,
+				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */,
+				F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */,
 				F22F07B02A7CE7FA009136EF /* SplashView.swift in Sources */,
+				F22F07BB2A7DFC10009136EF /* CouponView.swift in Sources */,
 				F22F07B22A7CE860009136EF /* StartView.swift in Sources */,
+				F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +472,8 @@
 				DEVELOPMENT_TEAM = T3MRA53A8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 이용 권한을 허용하시겠습니까?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근 권한을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +503,8 @@
 				DEVELOPMENT_TEAM = T3MRA53A8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 이용 권한을 허용하시겠습니까?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근 권한을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

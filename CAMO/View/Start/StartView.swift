@@ -49,7 +49,7 @@ struct StartView: View {
                 .padding(.horizontal, 30)
                 .padding(.vertical, 60)
                 
-                NavigationLink(destination: TabView().navigationBarBackButtonHidden(true),
+                NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true),
                                isActive: $isPresented, label:{})
                     .navigationBarHidden(true)
 
