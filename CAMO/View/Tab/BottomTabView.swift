@@ -20,7 +20,7 @@ struct BottomTabView: View {
         let appearance = UITabBarAppearance()
         appearance.configureWithTransparentBackground()
 
-//        UITabBar.appearance().backgroundColor = UIColor(Color("bgMainColor"))
+        UITabBar.appearance().backgroundColor = UIColor(Color("bgColor"))
         UITabBar.appearance().standardAppearance = appearance
     }
     

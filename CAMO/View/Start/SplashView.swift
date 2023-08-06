@@ -30,11 +30,9 @@ struct SplashView: View {
                             .padding(.horizontal, 80)
                             .padding(.top, 60)
                             
-                        
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color("GreenColor"))
             }
         }
         .background(Color("mainDarkColor"))

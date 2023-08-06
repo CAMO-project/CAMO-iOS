@@ -27,7 +27,6 @@ struct StartView: View {
                     .clipped() //프레임을 벗어나는 이미지 제거
                     .padding(.horizontal, 80)
                 
-                
                 VStack {
                     
                     Button {
@@ -55,7 +54,7 @@ struct StartView: View {
 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color("mainColor"))
+            .background(Color("mainDarkColor"))
     
             
         } // navigationView
