@@ -60,7 +60,7 @@ struct CafeView: View {
                 }
 //                .frame(width: .infinity)
                 .padding(.horizontal, 30)
-                .padding(.vertical, 20)
+                .padding(.top, 20)
                 
                 switch selectedSide {
                 case .list_view:
@@ -71,6 +71,7 @@ struct CafeView: View {
                 Spacer()
             }
         }
+        .onAppear (perform : UIApplication.shared.hideKeyboard)
 
     }
 }

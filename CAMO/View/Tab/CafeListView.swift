@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct CafeListView: View {
+    
+    var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    
     var body: some View {
-        CafeRow()
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach((0...14), id: \.self) { _ in
+                    NavigationLink {
+                        CafeInfoView()
+                    } label: {
+                        CafeRow()
+                    }
+                    
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.top, 20)
+        }
     }
 }
 

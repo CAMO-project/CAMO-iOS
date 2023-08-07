@@ -50,11 +50,11 @@ struct StartView: View {
                 
                 NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true),
                                isActive: $isPresented, label:{})
-                    .navigationBarHidden(true)
 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("mainDarkColor"))
+            .navigationBarHidden(true)
     
             
         } // navigationView

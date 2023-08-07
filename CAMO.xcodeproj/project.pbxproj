@@ -30,6 +30,8 @@
 		F22F07D32A7FB17D009136EF /* CafeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07D22A7FB17D009136EF /* CafeRow.swift */; };
 		F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07D62A7FC6D8009136EF /* TextModifiers.swift */; };
 		F22F07D92A7FCBD8009136EF /* RateAndFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07D82A7FCBD8009136EF /* RateAndFavorite.swift */; };
+		F22F07DB2A8094D4009136EF /* HideKeyboardExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07DA2A8094D4009136EF /* HideKeyboardExtention.swift */; };
+		F22F07DD2A80979B009136EF /* CafeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07DC2A80979B009136EF /* CafeInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		F22F07D22A7FB17D009136EF /* CafeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRow.swift; sourceTree = "<group>"; };
 		F22F07D62A7FC6D8009136EF /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
 		F22F07D82A7FCBD8009136EF /* RateAndFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAndFavorite.swift; sourceTree = "<group>"; };
+		F22F07DA2A8094D4009136EF /* HideKeyboardExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtention.swift; sourceTree = "<group>"; };
+		F22F07DC2A80979B009136EF /* CafeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 				F22F07CA2A7F9111009136EF /* CafeMapView.swift */,
 				F22F07D02A7FB0D7009136EF /* FilterView.swift */,
 				F22F07D22A7FB17D009136EF /* CafeRow.swift */,
+				F22F07DC2A80979B009136EF /* CafeInfoView.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			children = (
 				F22F07C02A7E7B42009136EF /* Permissions.swift */,
 				F22F07C62A7F8F01009136EF /* SegmentControl.swift */,
+				F22F07DA2A8094D4009136EF /* HideKeyboardExtention.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22F07DB2A8094D4009136EF /* HideKeyboardExtention.swift in Sources */,
 				F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */,
 				F22F07CF2A7FAF1C009136EF /* WhiteButton.swift in Sources */,
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
@@ -363,6 +370,7 @@
 				F22F07D92A7FCBD8009136EF /* RateAndFavorite.swift in Sources */,
 				F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */,
 				F22F07D32A7FB17D009136EF /* CafeRow.swift in Sources */,
+				F22F07DD2A80979B009136EF /* CafeInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
