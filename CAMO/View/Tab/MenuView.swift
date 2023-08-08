@@ -1,24 +1,28 @@
 //
-//  CafeListView.swift
+//  MenuView.swift
 //  CAMO
 //
-//  Created by 장세희 on 2023/08/06.
+//  Created by 장세희 on 2023/08/08.
 //
 
 import SwiftUI
 
-struct CafeListView: View {
+struct MenuView: View {
     
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
     var body: some View {
-        ScrollView {
+        VStack {
+            Text("대표메뉴")
+                .modifier(Title24BoldMain())
+                .padding(.horizontal, 30)
+            
             LazyVGrid(columns: columns) {
-                ForEach((0...14), id: \.self) { _ in
+                ForEach((0...1), id: \.self) { _ in
                     NavigationLink {
-                        CafeDetailView()
+                        MenuView()
                     } label: {
-                        CafeRow()
+                        MenuRow()
                     }
                 }
             }
@@ -28,8 +32,8 @@ struct CafeListView: View {
     }
 }
 
-struct CafeListView_Previews: PreviewProvider {
+struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        CafeListView()
+        MenuView()
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CafeDetailView: View {
     
+    var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    
     var body: some View {
         
         ScrollView {
@@ -82,12 +84,34 @@ struct CafeDetailView: View {
             .modifier(WhiteBox())
             .padding(30)
             
+            // event page
             
             
+            
+            
+            // menu
             VStack {
-                Text("대표 메뉴")
+                HStack {
+                    Text("대표 메뉴")
+                        .modifier(Title24BoldMain())
+                    Spacer()
+                    Text("더보기")
+                }
+                .padding(.horizontal, 30)
+                
+                LazyVGrid(columns: columns) {
+                    ForEach((0...1), id: \.self) { _ in
+                        NavigationLink {
+                            MenuView()
+                        } label: {
+                            MenuRow()
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.top, 20)
+                
             }
-            .modifier(WhiteBox())
             
             
         } // scrollView

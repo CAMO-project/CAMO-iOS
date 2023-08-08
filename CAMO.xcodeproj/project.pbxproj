@@ -36,6 +36,8 @@
 		F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E02A80C8B1009136EF /* WhiteBox.swift */; };
 		F22F07E32A80CAC6009136EF /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E22A80CAC6009136EF /* Tags.swift */; };
 		F22F07E52A80CCFC009136EF /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E42A80CCFC009136EF /* FlowLayout.swift */; };
+		F22F07E72A824E55009136EF /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E62A824E55009136EF /* MenuRow.swift */; };
+		F22F07E92A825195009136EF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E82A825195009136EF /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		F22F07E02A80C8B1009136EF /* WhiteBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBox.swift; sourceTree = "<group>"; };
 		F22F07E22A80CAC6009136EF /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		F22F07E42A80CCFC009136EF /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		F22F07E62A824E55009136EF /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		F22F07E82A825195009136EF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,8 @@
 				F22F07D02A7FB0D7009136EF /* FilterView.swift */,
 				F22F07D22A7FB17D009136EF /* CafeRow.swift */,
 				F22F07DC2A80979B009136EF /* CafeDetailView.swift */,
+				F22F07E62A824E55009136EF /* MenuRow.swift */,
+				F22F07E82A825195009136EF /* MenuView.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */,
 				F22F07CF2A7FAF1C009136EF /* WhiteButton.swift in Sources */,
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
+				F22F07E92A825195009136EF /* MenuView.swift in Sources */,
 				F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */,
@@ -382,6 +389,7 @@
 				F22F07C42A7F8ACD009136EF /* SearchBar.swift in Sources */,
 				F22F07CB2A7F9111009136EF /* CafeMapView.swift in Sources */,
 				F22F07B22A7CE860009136EF /* StartView.swift in Sources */,
+				F22F07E72A824E55009136EF /* MenuRow.swift in Sources */,
 				F22F07D12A7FB0D7009136EF /* FilterView.swift in Sources */,
 				F22F07D92A7FCBD8009136EF /* RateAndFavorite.swift in Sources */,
 				F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */,
