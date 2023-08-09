@@ -28,6 +28,7 @@ struct CafeRow: View {
                     .padding(.bottom, 1)
                     .font(.system(size: 18))
                     .fontWeight(.bold)
+                    .foregroundColor(Color("DefaultTextColor"))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Text("충청남도 천안시")

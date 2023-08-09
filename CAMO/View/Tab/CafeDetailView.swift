@@ -11,6 +11,8 @@ struct CafeDetailView: View {
     
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
+    @State var isPresented: Bool = false
+    
     var body: some View {
         
         ScrollView {
@@ -112,6 +114,26 @@ struct CafeDetailView: View {
                 .padding(.top, 20)
                 
             }
+            
+            
+            VStack {
+                Button {
+    //                isPresented = true
+                } label: {
+                    Text("별점 및 리뷰 작성하기")
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                }
+                .padding(.vertical, 20)
+                .background(Color("mainDarkColor"))
+                .cornerRadius(20)
+            }
+            .padding(.horizontal, 30)
+            .padding(.top, 60)
+            
+            
             
             
         } // scrollView
