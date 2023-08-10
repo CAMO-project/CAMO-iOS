@@ -9,8 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     
-    @State private var isPresented : Bool = false
-    
     var body: some View {
         
         NavigationView {
@@ -26,12 +24,10 @@ struct StartView: View {
                     .aspectRatio(1.0, contentMode: .fit)
                     .clipped() //프레임을 벗어나는 이미지 제거
                     .padding(.horizontal, 80)
-                
-                VStack {
+
                     
-                    Button {
-                        isPresented = true
-                    } label: {
+                NavigationLink(destination: BottomTabView().navigationBarHidden(true), label:{
+                    VStack {
                         Text("CAMO 앱 시작하기")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
@@ -41,16 +37,11 @@ struct StartView: View {
                     .padding(.vertical, 20)
                     .background(.white)
                     .cornerRadius(20)
-                    
-                    
-                }
+                })
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 30)
                 .padding(.vertical, 60)
-                
-                NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true),
-                               isActive: $isPresented, label:{})
-
+                    
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("mainDarkColor"))

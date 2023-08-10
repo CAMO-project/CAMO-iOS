@@ -18,3 +18,4 @@ struct WhiteBox: ViewModifier {
             .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 0)
     }
 }
+

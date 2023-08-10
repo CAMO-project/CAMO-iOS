@@ -37,7 +37,7 @@ struct MenuRow: View {
             .padding(.bottom, 10)
             
         }
-        .frame(width: UIScreen.main.bounds.size.width/2-50)
+        .frame(width: UIScreen.main.bounds.size.width/2-30)
         .background(Color("bgColor"))
         .border(Color.black.opacity(0), width: 0)
         .cornerRadius(10)

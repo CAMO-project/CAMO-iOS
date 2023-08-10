@@ -38,6 +38,9 @@
 		F22F07E52A80CCFC009136EF /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E42A80CCFC009136EF /* FlowLayout.swift */; };
 		F22F07E72A824E55009136EF /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E62A824E55009136EF /* MenuRow.swift */; };
 		F22F07E92A825195009136EF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F07E82A825195009136EF /* MenuView.swift */; };
+		F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A52A8488BA0070DB4F /* WriteReviewView.swift */; };
+		F23693A82A8489CA0070DB4F /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A72A8489CA0070DB4F /* Stars.swift */; };
+		F23693AA2A84C5910070DB4F /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A92A84C5910070DB4F /* ReviewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		F22F07E42A80CCFC009136EF /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		F22F07E62A824E55009136EF /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		F22F07E82A825195009136EF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F23693A52A8488BA0070DB4F /* WriteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewView.swift; sourceTree = "<group>"; };
+		F23693A72A8489CA0070DB4F /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		F23693A92A84C5910070DB4F /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,8 @@
 				F22F07DC2A80979B009136EF /* CafeDetailView.swift */,
 				F22F07E62A824E55009136EF /* MenuRow.swift */,
 				F22F07E82A825195009136EF /* MenuView.swift */,
+				F23693A52A8488BA0070DB4F /* WriteReviewView.swift */,
+				F23693A92A84C5910070DB4F /* ReviewRow.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				F22F07DE2A80C631009136EF /* IconTextLabel.swift */,
 				F22F07E02A80C8B1009136EF /* WhiteBox.swift */,
 				F22F07E22A80CAC6009136EF /* Tags.swift */,
+				F23693A72A8489CA0070DB4F /* Stars.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -380,7 +389,9 @@
 				F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */,
+				F23693A82A8489CA0070DB4F /* Stars.swift in Sources */,
 				F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */,
+				F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */,
 				F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */,
 				F22F07B02A7CE7FA009136EF /* SplashView.swift in Sources */,
 				F22F07C72A7F8F01009136EF /* SegmentControl.swift in Sources */,
@@ -390,6 +401,7 @@
 				F22F07CB2A7F9111009136EF /* CafeMapView.swift in Sources */,
 				F22F07B22A7CE860009136EF /* StartView.swift in Sources */,
 				F22F07E72A824E55009136EF /* MenuRow.swift in Sources */,
+				F23693AA2A84C5910070DB4F /* ReviewRow.swift in Sources */,
 				F22F07D12A7FB0D7009136EF /* FilterView.swift in Sources */,
 				F22F07D92A7FCBD8009136EF /* RateAndFavorite.swift in Sources */,
 				F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */,
