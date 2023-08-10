@@ -41,6 +41,7 @@
 		F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A52A8488BA0070DB4F /* WriteReviewView.swift */; };
 		F23693A82A8489CA0070DB4F /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A72A8489CA0070DB4F /* Stars.swift */; };
 		F23693AA2A84C5910070DB4F /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A92A84C5910070DB4F /* ReviewRow.swift */; };
+		F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AB2A84ED440070DB4F /* BrownButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		F23693A52A8488BA0070DB4F /* WriteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewView.swift; sourceTree = "<group>"; };
 		F23693A72A8489CA0070DB4F /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
 		F23693A92A84C5910070DB4F /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
+		F23693AB2A84ED440070DB4F /* BrownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				F22F07E02A80C8B1009136EF /* WhiteBox.swift */,
 				F22F07E22A80CAC6009136EF /* Tags.swift */,
 				F23693A72A8489CA0070DB4F /* Stars.swift */,
+				F23693AB2A84ED440070DB4F /* BrownButton.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				F22F07CF2A7FAF1C009136EF /* WhiteButton.swift in Sources */,
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
 				F22F07E92A825195009136EF /* MenuView.swift in Sources */,
+				F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */,
 				F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */,

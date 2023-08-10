@@ -133,21 +133,9 @@ struct CafeDetailView: View {
             // MARK: - review
 
             NavigationLink(destination: WriteReviewView(), label: {
-                Label {
-                    Text("별점 및 리뷰 남기기")
-                } icon : {
-                    Image(systemName: "square.and.pencil")
-                        .environment(\.symbolVariants, .none)
-                }
-                .font(.system(size: 20))
-                .foregroundColor(.white)
-                .fontWeight(.bold)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 20)
+                BrownButton(labelText: "별점 및 리뷰 남기기", labelIcon: "square.and.pencil")
             })
-            .background(Color("mainDarkColor"))
-            .cornerRadius(20)
-            .padding(30)
+
 
             VStack {
                 HStack {
