@@ -26,14 +26,12 @@ struct CafeRow: View {
             VStack (alignment: .leading) {
                 Text("카페 베이그")
                     .padding(.bottom, 1)
-                    .font(.system(size: 18))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("DefaultTextColor"))
+                    .modifier(Title16Bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Text("충청남도 천안시")
                     .padding(.bottom, 8)
-                    .modifier(Body16Gray())
+                    .modifier(Body14Gray())
                 
                 RateAndFavorite()
                     .padding(.bottom, 1)

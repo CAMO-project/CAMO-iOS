@@ -68,11 +68,30 @@ struct Title20Bold: ViewModifier {
     }
 }
 
+struct Title16Bold: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 16))
+            .fontWeight(.bold)
+            .foregroundColor(Color("DefaultTextColor"))
+    }
+}
+
 struct Body16Gray: ViewModifier {
     
     func body(content: Content) -> some View {
         content
             .font(.system(size: 16))
+            .foregroundColor(.gray)
+    }
+}
+
+struct Body14Gray: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 14))
             .foregroundColor(.gray)
     }
 }

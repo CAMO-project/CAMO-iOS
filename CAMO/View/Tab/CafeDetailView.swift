@@ -148,7 +148,7 @@ struct CafeDetailView: View {
                         .padding(.trailing, 4)
 
                     Text("3.5 점")
-                        .font(.system(size: 20))
+                        .font(.system(size: 18))
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 

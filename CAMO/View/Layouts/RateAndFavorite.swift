@@ -16,8 +16,7 @@ struct RateAndFavorite: View {
                 .foregroundColor(.orange)
             
             Text("5.0")
-                .font(.system(size: 14))
-                .foregroundColor(.gray)
+                .modifier(Body14Gray())
             
             Image(systemName: "heart.fill")
                 .environment(\.symbolVariants, .none)
@@ -25,8 +24,7 @@ struct RateAndFavorite: View {
                 .foregroundColor(.red)
             
             Text("20,332")
-                .font(.system(size: 14))
-                .foregroundColor(.gray)
+                .modifier(Body14Gray())
         }
         
         

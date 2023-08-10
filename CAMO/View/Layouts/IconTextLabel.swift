@@ -16,7 +16,8 @@ struct IconTextLabel: View {
         Label {
             Text(labelText)
                 .multilineTextAlignment(.leading)
-                .lineSpacing(5)
+                .lineSpacing(6)
+                .foregroundColor(Color("mainColor"))
         } icon : {
             Image(systemName: labelIcon)
                 .environment(\.symbolVariants, .none)

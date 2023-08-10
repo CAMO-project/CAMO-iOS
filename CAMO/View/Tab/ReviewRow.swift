@@ -40,6 +40,9 @@ struct ReviewRow: View {
             .padding(.bottom, 20)
             
             Text("여기 편하고 좋아요! 커피가 맛있어요 여기 편하고 좋아요! 커피가 맛있어요 여기 편하고 좋아요! 커피가 맛있어요 여기 편하고 좋아요! 커피가 맛있어요 여기 편하고 좋아요! 커피가 맛있어요 여기 편하고 좋아요! 커피가 맛있어요")
+                .font(.system(size: 16))
+                .lineSpacing(6)
+                .foregroundColor(Color("darkGrayColor"))
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity)
             

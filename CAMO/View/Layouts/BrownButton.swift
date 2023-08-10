@@ -22,9 +22,8 @@ struct BrownButton: View {
                 Image(systemName: labelIcon)
                     .environment(\.symbolVariants, .none)
             }
-            .font(.system(size: 20))
+            .font(.system(size: 18))
             .foregroundColor(Color("bgColor"))
-            .fontWeight(.bold)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 20)
         }

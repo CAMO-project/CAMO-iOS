@@ -23,13 +23,11 @@ struct MenuRow: View {
             VStack (alignment: .leading) {
                 Text("파인애플 주스")
                     .padding(.bottom, 1)
-                    .modifier(Body16Gray())
+                    .modifier(Body14Gray())
                 
                 Text("2,500원")
                     .padding(.bottom, 1)
-                    .font(.system(size: 18))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("DefaultTextColor"))
+                    .modifier(Title16Bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
             }
