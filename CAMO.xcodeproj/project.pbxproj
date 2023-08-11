@@ -43,6 +43,7 @@
 		F23693AA2A84C5910070DB4F /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693A92A84C5910070DB4F /* ReviewRow.swift */; };
 		F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AB2A84ED440070DB4F /* BrownButton.swift */; };
 		F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */; };
+		F23693B92A860B060070DB4F /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693B82A860B060070DB4F /* TagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		F23693A92A84C5910070DB4F /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
 		F23693AB2A84ED440070DB4F /* BrownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownButton.swift; sourceTree = "<group>"; };
 		F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
+		F23693B82A860B060070DB4F /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,19 +211,10 @@
 			isa = PBXGroup;
 			children = (
 				F22F07B52A7CECE9009136EF /* BottomTabView.swift */,
-				F22F07B32A7CECB9009136EF /* HomeView.swift */,
-				F22F07B82A7DFC03009136EF /* CafeView.swift */,
-				F22F07BA2A7DFC10009136EF /* CouponView.swift */,
-				F22F07BC2A7DFC20009136EF /* ProfileView.swift */,
-				F22F07C82A7F9107009136EF /* CafeListView.swift */,
-				F22F07CA2A7F9111009136EF /* CafeMapView.swift */,
-				F22F07D02A7FB0D7009136EF /* FilterView.swift */,
-				F22F07D22A7FB17D009136EF /* CafeRow.swift */,
-				F22F07DC2A80979B009136EF /* CafeDetailView.swift */,
-				F22F07E62A824E55009136EF /* MenuRow.swift */,
-				F22F07E82A825195009136EF /* MenuView.swift */,
-				F23693A52A8488BA0070DB4F /* WriteReviewView.swift */,
-				F23693A92A84C5910070DB4F /* ReviewRow.swift */,
+				F23693AF2A8508FD0070DB4F /* Main */,
+				F23693B02A85090C0070DB4F /* Cafe */,
+				F23693B12A8509220070DB4F /* Coupon */,
+				F23693B22A85092F0070DB4F /* Profile */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -239,19 +232,101 @@
 		F22F07C52A7F8BFE009136EF /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				F22F07E42A80CCFC009136EF /* FlowLayout.swift */,
-				F22F07C32A7F8ACD009136EF /* SearchBar.swift */,
-				F22F07CE2A7FAF1C009136EF /* WhiteButton.swift */,
-				F22F07D62A7FC6D8009136EF /* TextModifiers.swift */,
-				F22F07D82A7FCBD8009136EF /* RateAndFavorite.swift */,
-				F22F07DE2A80C631009136EF /* IconTextLabel.swift */,
-				F22F07E02A80C8B1009136EF /* WhiteBox.swift */,
-				F22F07E22A80CAC6009136EF /* Tags.swift */,
-				F23693A72A8489CA0070DB4F /* Stars.swift */,
-				F23693AB2A84ED440070DB4F /* BrownButton.swift */,
-				F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */,
+				F23693B52A8509A50070DB4F /* Text */,
+				F23693B42A8509920070DB4F /* Button */,
+				F23693B62A8509E60070DB4F /* Tag */,
+				F23693B72A850A050070DB4F /* Component */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F23693AF2A8508FD0070DB4F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07B32A7CECB9009136EF /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F23693B02A85090C0070DB4F /* Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07B82A7DFC03009136EF /* CafeView.swift */,
+				F22F07C82A7F9107009136EF /* CafeListView.swift */,
+				F22F07CA2A7F9111009136EF /* CafeMapView.swift */,
+				F22F07D02A7FB0D7009136EF /* FilterView.swift */,
+				F23693B82A860B060070DB4F /* TagView.swift */,
+				F22F07DC2A80979B009136EF /* CafeDetailView.swift */,
+				F22F07E82A825195009136EF /* MenuView.swift */,
+				F23693A52A8488BA0070DB4F /* WriteReviewView.swift */,
+				F23693B32A85094B0070DB4F /* Row */,
+			);
+			path = Cafe;
+			sourceTree = "<group>";
+		};
+		F23693B12A8509220070DB4F /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07BA2A7DFC10009136EF /* CouponView.swift */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		F23693B22A85092F0070DB4F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07BC2A7DFC20009136EF /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F23693B32A85094B0070DB4F /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07D22A7FB17D009136EF /* CafeRow.swift */,
+				F22F07E62A824E55009136EF /* MenuRow.swift */,
+				F23693A92A84C5910070DB4F /* ReviewRow.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		F23693B42A8509920070DB4F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07CE2A7FAF1C009136EF /* WhiteButton.swift */,
+				F23693AB2A84ED440070DB4F /* BrownButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F23693B52A8509A50070DB4F /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07D62A7FC6D8009136EF /* TextModifiers.swift */,
+				F22F07DE2A80C631009136EF /* IconTextLabel.swift */,
+				F22F07D82A7FCBD8009136EF /* RateAndFavorite.swift */,
+				F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		F23693B62A8509E60070DB4F /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				F22F07E22A80CAC6009136EF /* Tags.swift */,
+				F22F07E42A80CCFC009136EF /* FlowLayout.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		F23693B72A850A050070DB4F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F23693A72A8489CA0070DB4F /* Stars.swift */,
+				F22F07C32A7F8ACD009136EF /* SearchBar.swift */,
+				F22F07E02A80C8B1009136EF /* WhiteBox.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +490,7 @@
 				F22F07D32A7FB17D009136EF /* CafeRow.swift in Sources */,
 				F22F07DD2A80979B009136EF /* CafeDetailView.swift in Sources */,
 				F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */,
+				F23693B92A860B060070DB4F /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

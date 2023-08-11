@@ -50,13 +50,10 @@ struct CafeView: View {
                     // filter Buttons
                     WhiteButton(isActive: $isActiveFilter, buttonText: .constant("태그"))
                         .sheet(isPresented: $isActiveFilter) {
-                            FilterView()
+                            TagView()
                         }
                     
-                    WhiteButton(isActive: $isActiveFilter, buttonText: .constant("추천순"))
-                        .sheet(isPresented: $isActiveFilter) {
-                            FilterView()
-                        }
+                    FilterView()
                 }
 //                .frame(width: .infinity)
                 .padding(.horizontal, 30)
