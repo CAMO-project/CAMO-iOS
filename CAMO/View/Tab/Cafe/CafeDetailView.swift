@@ -169,7 +169,7 @@ struct CafeDetailView: View {
         } // scrollView
         .navigationTitle("카페 베이그")
         .navigationBarTitleDisplayMode(.inline)
-        
+        .navigationBarItems(trailing: FavoriteButton(isSet: .constant(true)))
     }
 }
 

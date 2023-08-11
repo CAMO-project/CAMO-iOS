@@ -13,14 +13,27 @@ struct CafeRow: View {
     
     var body: some View {
         VStack {
-            // cafe image
-            Image("CafeSampleImage1")
-                .resizable()
-                .aspectRatio(1.0, contentMode: .fit)
-                .clipped()
-                .cornerRadius(10)
-                .frame(width: UIScreen.main.bounds.size.width/2-30)
-                .padding(.bottom, 1)
+            ZStack {
+                // cafe image
+                Image("CafeSampleImage1")
+                    .resizable()
+                    .aspectRatio(1.0, contentMode: .fit)
+                    .clipped()
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        FavoriteButton(isSet: .constant(true))
+                    }
+                    .padding(.trailing, 10)
+                    Spacer()
+                }
+                .padding(.top, 10)
+            }
+            .cornerRadius(10)
+            .frame(width: UIScreen.main.bounds.size.width/2-30, height: UIScreen.main.bounds.size.width/2-30)
+            .padding(.bottom, 1)
+            
             
             // cafe info
             VStack (alignment: .leading) {

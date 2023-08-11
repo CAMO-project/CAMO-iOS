@@ -44,6 +44,7 @@
 		F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AB2A84ED440070DB4F /* BrownButton.swift */; };
 		F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */; };
 		F23693B92A860B060070DB4F /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693B82A860B060070DB4F /* TagView.swift */; };
+		F23693BB2A8611D20070DB4F /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693BA2A8611D20070DB4F /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		F23693AB2A84ED440070DB4F /* BrownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownButton.swift; sourceTree = "<group>"; };
 		F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
 		F23693B82A860B060070DB4F /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		F23693BA2A8611D20070DB4F /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 			children = (
 				F22F07CE2A7FAF1C009136EF /* WhiteButton.swift */,
 				F23693AB2A84ED440070DB4F /* BrownButton.swift */,
+				F23693BA2A8611D20070DB4F /* FavoriteButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
 				F22F07E92A825195009136EF /* MenuView.swift in Sources */,
 				F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */,
+				F23693BB2A8611D20070DB4F /* FavoriteButton.swift in Sources */,
 				F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */,
