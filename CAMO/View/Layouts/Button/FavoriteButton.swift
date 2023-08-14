@@ -14,16 +14,16 @@ struct FavoriteButton: View {
         Button {
             isSet.toggle()
         } label: {
-            Label("Toggle Favorite", systemImage: isSet ? "heart.fill" : "heart")
+            Label("Toggle Favorite", systemImage: isSet ? "heart.fill" : "heart.fill")
                 .font(.system(size: 20))
                 .labelStyle(.iconOnly)
-                .foregroundColor(isSet ? Color("redPointColor") : .gray)
+                .foregroundColor(isSet ? Color("redPointColor") : Color("lightGrayColor"))
         }
     }
 }
 
 struct FavoriteButton_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteButton(isSet: .constant(true))
+        FavoriteButton(isSet: .constant(false))
     }
 }

@@ -23,7 +23,6 @@ struct FilterView: View {
             .cornerRadius(10)
             .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 0)
             
-            // 사이즈가 왤케 크지,,
         }
 
     }

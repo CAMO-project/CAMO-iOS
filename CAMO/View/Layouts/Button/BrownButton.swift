@@ -10,22 +10,16 @@ import SwiftUI
 struct BrownButton: View {
     
     var labelText: String
-    var labelIcon: String
     
     var body: some View {
         
         // LightMode: Brown, DarkMode: LightPink
         VStack {
-            Label {
-                Text(labelText)
-            } icon : {
-                Image(systemName: labelIcon)
-                    .environment(\.symbolVariants, .none)
-            }
-            .font(.system(size: 18))
-            .foregroundColor(Color("bgColor"))
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 20)
+            Text(labelText)
+                .font(.system(size: 18))
+                .foregroundColor(Color("bgColor"))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 20)
         }
         .background(Color("mainColor"))
         .cornerRadius(20)
@@ -35,6 +29,6 @@ struct BrownButton: View {
 
 struct BrownButton_Previews: PreviewProvider {
     static var previews: some View {
-        BrownButton(labelText: "버튼", labelIcon: "star")
+        BrownButton(labelText: "버튼")
     }
 }

@@ -30,27 +30,24 @@ struct CafeDetailView: View {
 
                 IconTextLabel(labelIcon: .constant("phone"), labelText: .constant("041-1111-2222"))
                     .padding(.horizontal, 20)
+                    .padding(.bottom, 20)
 
-                HStack {
-                    IconTextLabel(labelIcon: .constant("heart.circle"), labelText: .constant("스탬프 0 / 10"))
-                        .padding(.trailing, 20)
+                IconTextLabel(labelIcon: .constant("heart.circle"), labelText: .constant("스탬프 0 / 10"))
+                    .padding(.horizontal, 20)
 
-                    Label {
-                        // 쿠폰보상
-                        Text("아이스 아메리카노")
-                            .font(.system(size: 14))
-                            .lineLimit(1)
-                            .foregroundColor(.gray)
-                    } icon : {
-                        Image(systemName: "gift")
-                            .environment(\.symbolVariants, .none)
-                            .font(.system(size: 14))
-                            .foregroundColor(Color("redPointColor"))
-                    }
-                    Spacer()
-
+                Label {
+                    // 쿠폰보상
+                    Text("아이스 아메리카노")
+                        .font(.system(size: 16))
+                        .foregroundColor(Color("mainColor"))
+                } icon : {
+                    Image(systemName: "gift")
+                        .environment(\.symbolVariants, .none)
+                        .font(.system(size: 16))
+                        .foregroundColor(Color("redPointColor"))
                 }
                 .padding(20)
+
 
                 IconTextLabel(labelIcon: .constant("quote.bubble"), labelText: .constant("한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요 개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요"))
                     .padding(.horizontal, 20)
@@ -80,8 +77,7 @@ struct CafeDetailView: View {
             } // vstack
             .frame(maxWidth: .infinity)
             .modifier(WhiteBox())
-            .padding(.vertical, 30)
-            .padding(.horizontal, 30)
+            .padding(30)
 
             // event page
             VStack {
@@ -133,7 +129,7 @@ struct CafeDetailView: View {
             // MARK: - review
 
             NavigationLink(destination: WriteReviewView(), label: {
-                BrownButton(labelText: "별점 및 리뷰 남기기", labelIcon: "square.and.pencil")
+                BrownButton(labelText: "별점 및 리뷰 남기기")
             })
 
 
