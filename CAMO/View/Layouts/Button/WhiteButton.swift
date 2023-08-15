@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct WhiteButton: View {
-    @Binding var isActive: Bool
-    @Binding var buttonText: String
+    var buttonText: String
     
     var body: some View {
-        Button {
-            isActive.toggle()
-        } label: {
-            Text("\(buttonText)")
+        VStack {
+            Text(buttonText)
                 .font(.system(size: 16))
                 .fontWeight(.bold)
                 .foregroundColor(Color("mainColor"))
@@ -29,6 +26,6 @@ struct WhiteButton: View {
 
 struct WhiteButton_Previews: PreviewProvider {
     static var previews: some View {
-        WhiteButton(isActive: .constant(false), buttonText: .constant("버튼"))
+        WhiteButton(buttonText: "버튼")
     }
 }

@@ -47,12 +47,17 @@ struct CafeView: View {
                         .foregroundColor(.gray)
                     Spacer()
                     
-                    // filter Buttons
-                    WhiteButton(isActive: $isActiveFilter, buttonText: .constant("태그"))
-                        .sheet(isPresented: $isActiveFilter) {
-                            TagView()
-                        }
+                    // tag Button
+                    Button(action: {
+                        isActiveFilter.toggle()
+                    }, label: {
+                        WhiteButton(buttonText: "태그")
+                    })
+                    .sheet(isPresented: $isActiveFilter) {
+                        TagView()
+                    }
                     
+                    // filter button
                     FilterView()
                 }
 //                .frame(width: .infinity)

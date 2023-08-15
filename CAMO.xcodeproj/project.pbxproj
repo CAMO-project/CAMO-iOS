@@ -45,6 +45,11 @@
 		F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */; };
 		F23693B92A860B060070DB4F /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693B82A860B060070DB4F /* TagView.swift */; };
 		F23693BB2A8611D20070DB4F /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693BA2A8611D20070DB4F /* FavoriteButton.swift */; };
+		F23693BD2A8B57280070DB4F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693BC2A8B57280070DB4F /* BorderButton.swift */; };
+		F23693BF2A8B5B650070DB4F /* PersonalProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693BE2A8B5B650070DB4F /* PersonalProfile.swift */; };
+		F23693C12A8B5BB90070DB4F /* OwnerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */; };
+		F23693C32A8B5BDB0070DB4F /* LandingLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C22A8B5BDB0070DB4F /* LandingLogin.swift */; };
+		F23693C52A8B5F640070DB4F /* CommonProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C42A8B5F640070DB4F /* CommonProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +111,11 @@
 		F23693AD2A8504220070DB4F /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
 		F23693B82A860B060070DB4F /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		F23693BA2A8611D20070DB4F /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		F23693BC2A8B57280070DB4F /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		F23693BE2A8B5B650070DB4F /* PersonalProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfile.swift; sourceTree = "<group>"; };
+		F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfile.swift; sourceTree = "<group>"; };
+		F23693C22A8B5BDB0070DB4F /* LandingLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingLogin.swift; sourceTree = "<group>"; };
+		F23693C42A8B5F640070DB4F /* CommonProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +288,10 @@
 			isa = PBXGroup;
 			children = (
 				F22F07BC2A7DFC20009136EF /* ProfileView.swift */,
+				F23693C22A8B5BDB0070DB4F /* LandingLogin.swift */,
+				F23693C42A8B5F640070DB4F /* CommonProfileView.swift */,
+				F23693BE2A8B5B650070DB4F /* PersonalProfile.swift */,
+				F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -298,6 +312,7 @@
 				F22F07CE2A7FAF1C009136EF /* WhiteButton.swift */,
 				F23693AB2A84ED440070DB4F /* BrownButton.swift */,
 				F23693BA2A8611D20070DB4F /* FavoriteButton.swift */,
+				F23693BC2A8B57280070DB4F /* BorderButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -469,16 +484,21 @@
 				F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */,
 				F22F07CF2A7FAF1C009136EF /* WhiteButton.swift in Sources */,
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
+				F23693BF2A8B5B650070DB4F /* PersonalProfile.swift in Sources */,
 				F22F07E92A825195009136EF /* MenuView.swift in Sources */,
+				F23693C12A8B5BB90070DB4F /* OwnerProfile.swift in Sources */,
 				F23693AC2A84ED440070DB4F /* BrownButton.swift in Sources */,
 				F23693BB2A8611D20070DB4F /* FavoriteButton.swift in Sources */,
 				F22F07E12A80C8B1009136EF /* WhiteBox.swift in Sources */,
 				F22F07842A793AD0009136EF /* CAMOApp.swift in Sources */,
 				F22F07D72A7FC6D8009136EF /* TextModifiers.swift in Sources */,
+				F23693BD2A8B57280070DB4F /* BorderButton.swift in Sources */,
 				F23693A82A8489CA0070DB4F /* Stars.swift in Sources */,
 				F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */,
 				F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */,
 				F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */,
+				F23693C32A8B5BDB0070DB4F /* LandingLogin.swift in Sources */,
+				F23693C52A8B5F640070DB4F /* CommonProfileView.swift in Sources */,
 				F22F07B02A7CE7FA009136EF /* SplashView.swift in Sources */,
 				F22F07C72A7F8F01009136EF /* SegmentControl.swift in Sources */,
 				F22F07C92A7F9107009136EF /* CafeListView.swift in Sources */,

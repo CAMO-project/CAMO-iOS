@@ -30,6 +30,15 @@ struct Title28BoldMain: ViewModifier {
     }
 }
 
+struct Title28Bold: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 28))
+            .fontWeight(.bold)
+    }
+}
+
 struct Title24BoldMain: ViewModifier {
     
     func body(content: Content) -> some View {
