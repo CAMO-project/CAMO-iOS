@@ -32,6 +32,14 @@ struct CommonProfileView: View {
                             .modifier(Title28Bold())
                         Text("님")
                             .font(.system(size: 24))
+                        Spacer()
+                        
+                        NavigationLink(destination: SettingView(), label: {
+                            Image(systemName: "gearshape")
+                                .font(.system(size: 24))
+                                .foregroundColor(Color("mainColor"))
+                                
+                        })
                     }
                     
                 }

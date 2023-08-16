@@ -9,7 +9,12 @@ import SwiftUI
 
 struct PersonalProfile: View {
     var body: some View {
-        Text("")
+        VStack {
+            Text("카페 사장님이신가요?")
+            NavigationLink(destination: RegisterCafeView(), label: {
+                BrownButton(labelText: "카페 등록하러 가기")
+            })
+        }
     }
 }
 

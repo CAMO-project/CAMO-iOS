@@ -50,6 +50,10 @@
 		F23693C12A8B5BB90070DB4F /* OwnerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */; };
 		F23693C32A8B5BDB0070DB4F /* LandingLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C22A8B5BDB0070DB4F /* LandingLogin.swift */; };
 		F23693C52A8B5F640070DB4F /* CommonProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C42A8B5F640070DB4F /* CommonProfileView.swift */; };
+		F23693C92A8CD1C30070DB4F /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693C82A8CD1C30070DB4F /* Cafe.swift */; };
+		F23693CB2A8CDBD00070DB4F /* CafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CA2A8CDBD00070DB4F /* CafeController.swift */; };
+		F23693CD2A8CDF1B0070DB4F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CC2A8CDF1B0070DB4F /* SettingView.swift */; };
+		F23693CF2A8CE6BE0070DB4F /* RegisterCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,10 @@
 		F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfile.swift; sourceTree = "<group>"; };
 		F23693C22A8B5BDB0070DB4F /* LandingLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingLogin.swift; sourceTree = "<group>"; };
 		F23693C42A8B5F640070DB4F /* CommonProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonProfileView.swift; sourceTree = "<group>"; };
+		F23693C82A8CD1C30070DB4F /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		F23693CA2A8CDBD00070DB4F /* CafeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeController.swift; sourceTree = "<group>"; };
+		F23693CC2A8CDF1B0070DB4F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCafeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,8 @@
 		F22F07822A793AD0009136EF /* CAMO */ = {
 			isa = PBXGroup;
 			children = (
+				F23693C62A8CD1A20070DB4F /* Model */,
+				F23693C72A8CD1AB0070DB4F /* Controller */,
 				F22F07C22A7F8A6E009136EF /* Helpers */,
 				F22F07AD2A7CE7CF009136EF /* View */,
 				F22F07832A793AD0009136EF /* CAMOApp.swift */,
@@ -292,6 +302,8 @@
 				F23693C42A8B5F640070DB4F /* CommonProfileView.swift */,
 				F23693BE2A8B5B650070DB4F /* PersonalProfile.swift */,
 				F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */,
+				F23693CC2A8CDF1B0070DB4F /* SettingView.swift */,
+				F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -345,6 +357,22 @@
 				F22F07E02A80C8B1009136EF /* WhiteBox.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		F23693C62A8CD1A20070DB4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F23693C82A8CD1C30070DB4F /* Cafe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F23693C72A8CD1AB0070DB4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F23693CA2A8CDBD00070DB4F /* CafeController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +512,8 @@
 				F22F07BD2A7DFC20009136EF /* ProfileView.swift in Sources */,
 				F22F07CF2A7FAF1C009136EF /* WhiteButton.swift in Sources */,
 				F22F07B62A7CECE9009136EF /* BottomTabView.swift in Sources */,
+				F23693CD2A8CDF1B0070DB4F /* SettingView.swift in Sources */,
+				F23693CF2A8CE6BE0070DB4F /* RegisterCafeView.swift in Sources */,
 				F23693BF2A8B5B650070DB4F /* PersonalProfile.swift in Sources */,
 				F22F07E92A825195009136EF /* MenuView.swift in Sources */,
 				F23693C12A8B5BB90070DB4F /* OwnerProfile.swift in Sources */,
@@ -495,6 +525,7 @@
 				F23693BD2A8B57280070DB4F /* BorderButton.swift in Sources */,
 				F23693A82A8489CA0070DB4F /* Stars.swift in Sources */,
 				F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */,
+				F23693CB2A8CDBD00070DB4F /* CafeController.swift in Sources */,
 				F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */,
 				F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */,
 				F23693C32A8B5BDB0070DB4F /* LandingLogin.swift in Sources */,
@@ -515,6 +546,7 @@
 				F22F07DD2A80979B009136EF /* CafeDetailView.swift in Sources */,
 				F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */,
 				F23693B92A860B060070DB4F /* TagView.swift in Sources */,
+				F23693C92A8CD1C30070DB4F /* Cafe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
