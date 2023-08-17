@@ -38,9 +38,11 @@ struct CommonProfileView: View {
                             Image(systemName: "gearshape")
                                 .font(.system(size: 24))
                                 .foregroundColor(Color("mainColor"))
-                                
                         })
                     }
+                    NavigationLink(destination: EditProfileView(), label: {
+                        WhiteButton(buttonText: "프로필 수정")
+                    })
                     
                 }
             }

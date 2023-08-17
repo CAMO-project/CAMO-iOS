@@ -54,6 +54,7 @@
 		F23693CB2A8CDBD00070DB4F /* CafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CA2A8CDBD00070DB4F /* CafeController.swift */; };
 		F23693CD2A8CDF1B0070DB4F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CC2A8CDF1B0070DB4F /* SettingView.swift */; };
 		F23693CF2A8CE6BE0070DB4F /* RegisterCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */; };
+		F23693D12A8DC5A30070DB4F /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693D02A8DC5A30070DB4F /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		F23693CA2A8CDBD00070DB4F /* CafeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeController.swift; sourceTree = "<group>"; };
 		F23693CC2A8CDF1B0070DB4F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCafeView.swift; sourceTree = "<group>"; };
+		F23693D02A8DC5A30070DB4F /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 				F23693C02A8B5BB90070DB4F /* OwnerProfile.swift */,
 				F23693CC2A8CDF1B0070DB4F /* SettingView.swift */,
 				F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */,
+				F23693D02A8DC5A30070DB4F /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				F22F07B42A7CECB9009136EF /* HomeView.swift in Sources */,
 				F23693CB2A8CDBD00070DB4F /* CafeController.swift in Sources */,
 				F23693A62A8488BA0070DB4F /* WriteReviewView.swift in Sources */,
+				F23693D12A8DC5A30070DB4F /* EditProfileView.swift in Sources */,
 				F22F07C12A7E7B42009136EF /* Permissions.swift in Sources */,
 				F23693C32A8B5BDB0070DB4F /* LandingLogin.swift in Sources */,
 				F23693C52A8B5F640070DB4F /* CommonProfileView.swift in Sources */,
