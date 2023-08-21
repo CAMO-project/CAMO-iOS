@@ -55,6 +55,7 @@
 		F23693CD2A8CDF1B0070DB4F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CC2A8CDF1B0070DB4F /* SettingView.swift */; };
 		F23693CF2A8CE6BE0070DB4F /* RegisterCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */; };
 		F23693D12A8DC5A30070DB4F /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693D02A8DC5A30070DB4F /* EditProfileView.swift */; };
+		F23693D42A939C770070DB4F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F23693D32A939C770070DB4F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23693D42A939C770070DB4F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +396,9 @@
 			dependencies = (
 			);
 			name = CAMO;
+			packageProductDependencies = (
+				F23693D32A939C770070DB4F /* Alamofire */,
+			);
 			productName = CAMO;
 			productReference = F22F07802A793AD0009136EF /* CAMO.app */;
 			productType = "com.apple.product-type.application";
@@ -466,6 +471,9 @@
 				Base,
 			);
 			mainGroup = F22F07772A793AD0009136EF;
+			packageReferences = (
+				F23693D22A939C770070DB4F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F22F07812A793AD0009136EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -879,6 +887,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F23693D22A939C770070DB4F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F23693D32A939C770070DB4F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23693D22A939C770070DB4F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F22F07782A793AD0009136EF /* Project object */;
 }

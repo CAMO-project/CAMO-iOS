@@ -41,7 +41,11 @@ struct CommonProfileView: View {
                         })
                     }
                     NavigationLink(destination: EditProfileView(), label: {
-                        WhiteButton(buttonText: "프로필 수정")
+                        VStack {
+                            IconTextLabel(labelIcon: "pencil", labelText: "프로필 수정")
+                                .padding(10)
+                        }
+                        .modifier(WhiteBox())
                     })
                     
                 }

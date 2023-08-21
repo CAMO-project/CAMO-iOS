@@ -24,15 +24,15 @@ struct CafeDetailView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .clipped() //프레임을 벗어나는 이미지 제거
 
-                IconTextLabel(labelIcon: .constant("map"), labelText: .constant("충청남도 서북구 천안대로 1223-24 천안대로 1223-24 천안대로  1223-24 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요"))
+                IconTextLabel(labelIcon: "map", labelText: "충청남도 서북구 천안대로 1223-24 천안대로 1223-24 천안대로  1223-24 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요")
                     .padding(20)
 
 
-                IconTextLabel(labelIcon: .constant("phone"), labelText: .constant("041-1111-2222"))
+                IconTextLabel(labelIcon: "phone", labelText: "041-1111-2222")
                     .padding(.horizontal, 20)
                     .padding(.bottom, 20)
 
-                IconTextLabel(labelIcon: .constant("heart.circle"), labelText: .constant("스탬프 0 / 10"))
+                IconTextLabel(labelIcon: "heart.circle", labelText: "스탬프 0 / 10")
                     .padding(.horizontal, 20)
 
                 Label {
@@ -49,7 +49,7 @@ struct CafeDetailView: View {
                 .padding(20)
 
 
-                IconTextLabel(labelIcon: .constant("quote.bubble"), labelText: .constant("한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요 개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요"))
+                IconTextLabel(labelIcon: "quote.bubble", labelText: "한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요 개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요")
                     .padding(.horizontal, 20)
 
                 // 구분선

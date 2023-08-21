@@ -9,8 +9,8 @@ import SwiftUI
 
 struct IconTextLabel: View {
     
-    @Binding var labelIcon: String
-    @Binding var labelText: String
+    var labelIcon: String
+    var labelText: String
     
     var body: some View {
         Label {
@@ -29,6 +29,6 @@ struct IconTextLabel: View {
 
 struct IconTextLabel_Previews: PreviewProvider {
     static var previews: some View {
-        IconTextLabel(labelIcon: .constant("map"), labelText: .constant("hello"))
+        IconTextLabel(labelIcon: "map", labelText: "hello")
     }
 }

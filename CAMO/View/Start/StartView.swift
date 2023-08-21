@@ -9,6 +9,8 @@ import SwiftUI
 
 struct StartView: View {
     
+    @ObservedObject var cafeController = CafeController()
+    
     var body: some View {
         
         NavigationView {
@@ -49,6 +51,9 @@ struct StartView: View {
     
             
         } // navigationView
+        .onAppear() {
+            cafeController.getCafeDetail()
+        }
     }
 }
 
