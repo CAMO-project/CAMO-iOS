@@ -9,8 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     
-    @ObservedObject var cafeController = CafeController()
-    
     var body: some View {
         
         NavigationView {
@@ -48,12 +46,8 @@ struct StartView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("mainDarkColor"))
             .navigationBarHidden(true)
-    
             
         } // navigationView
-        .onAppear() {
-            cafeController.getCafeDetail()
-        }
     }
 }
 
