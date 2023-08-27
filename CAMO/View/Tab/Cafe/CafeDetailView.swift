@@ -9,35 +9,41 @@ import SwiftUI
 
 struct CafeDetailView: View {
     
-    var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    @ObservedObject var cafeController = CafeController()
     
+    var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     @State var isPresented: Bool = false
+    
+    init(_ cafeId: String) {
+        self.cafeController.getCafeDetail(cafeId: cafeId)
+    }
+    
     
     var body: some View {
         
         ScrollView {
             VStack (alignment: .leading) {
-
-                Image("CafeSampleImage1")
-                    .resizable()
-                    .aspectRatio(1.0, contentMode: .fit)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .clipped() //프레임을 벗어나는 이미지 제거
-
-                IconTextLabel(labelIcon: "map", labelText: "충청남도 서북구 천안대로 1223-24 천안대로 1223-24 천안대로  1223-24 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요")
+                ZStack {
+                    AsyncImage(url: URL(string: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190103_252%2F1546517415100C9KLk_JPEG%2FSSAjuqPDOhlR0A6Aeer0FLBO.jpg"))
+//                        .resizable()
+//                        .aspectRatio(1.0, contentMode: .fit)
+//                        .clipShape(RoundedRectangle(cornerRadius: 20))
+//                        .clipped() //프레임을 벗어나는 이미지 제거
+                }
+                IconTextLabel(labelIcon: "map", labelText: "\(cafeController.cafeDetail.data.body.address)")
                     .padding(20)
 
 
-                IconTextLabel(labelIcon: "phone", labelText: "041-1111-2222")
+                IconTextLabel(labelIcon: "phone", labelText:  "\(cafeController.cafeDetail.data.body.contact)")
                     .padding(.horizontal, 20)
                     .padding(.bottom, 20)
 
-                IconTextLabel(labelIcon: "heart.circle", labelText: "스탬프 0 / 10")
+                IconTextLabel(labelIcon: "heart.circle", labelText: "스탬프 \(cafeController.cafeDetail.data.body.user_stamps) / \(cafeController.cafeDetail.data.body.required_stamps)")
                     .padding(.horizontal, 20)
 
                 Label {
                     // 쿠폰보상
-                    Text("아이스 아메리카노")
+                    Text("\(cafeController.cafeDetail.data.body.reward)")
                         .font(.system(size: 16))
                         .foregroundColor(Color("mainColor"))
                 } icon : {
@@ -49,7 +55,7 @@ struct CafeDetailView: View {
                 .padding(20)
 
 
-                IconTextLabel(labelIcon: "quote.bubble", labelText: "한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요 개 한줄 소개한줄소개 한줄 소개한줄소개 한줄 소개 안녕하세요 카페 베이그 입니다 즐거운 하루 보내세요 행복하세요 배고파요")
+                IconTextLabel(labelIcon: "quote.bubble", labelText: "\(cafeController.cafeDetail.data.body.cafe_introduction)")
                     .padding(.horizontal, 20)
 
                 // 구분선
@@ -65,14 +71,20 @@ struct CafeDetailView: View {
                     }
                     .foregroundColor(Color("mainColor"))
                     .font(.system(size: 20))
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 10)
                     .padding(.horizontal, 20)
 
                     // tags
-//                    FlowLayout(tagsModel) { tag in
-//                    Tags(tagName: .constant("감성카페"))
-//                      }
-//                      .padding()
+                HStack() {
+                    ForEach(cafeController.cafeDetail.data.body.tags, id: \.self) { tag in
+                        Tags(tagName: .constant(tag))
+                    }
+                    .padding(.bottom, 6)
+                    .padding(.trailing, 4)
+                }
+                .frame(width: .infinity, alignment: .leading)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
 
             } // vstack
             .frame(maxWidth: .infinity)
@@ -171,6 +183,6 @@ struct CafeDetailView: View {
 
 struct CafeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CafeDetailView()
+        CafeDetailView("")
     }
 }

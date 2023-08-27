@@ -16,7 +16,7 @@ struct CafeListView: View {
             LazyVGrid(columns: columns) {
                 ForEach((0...14), id: \.self) { _ in
                     NavigationLink {
-                        CafeDetailView()
+                        CafeDetailView("%7Bcafe_id%7D")
                     } label: {
                         CafeRow()
                     }

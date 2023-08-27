@@ -56,6 +56,8 @@
 		F23693CF2A8CE6BE0070DB4F /* RegisterCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */; };
 		F23693D12A8DC5A30070DB4F /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693D02A8DC5A30070DB4F /* EditProfileView.swift */; };
 		F23693D42A939C770070DB4F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F23693D32A939C770070DB4F /* Alamofire */; };
+		F23693D82A99AF590070DB4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693D72A99AF590070DB4F /* Menu.swift */; };
+		F23693DA2A99C2D40070DB4F /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23693D92A99C2D40070DB4F /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		F23693CC2A8CDF1B0070DB4F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F23693CE2A8CE6BE0070DB4F /* RegisterCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCafeView.swift; sourceTree = "<group>"; };
 		F23693D02A8DC5A30070DB4F /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		F23693D72A99AF590070DB4F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F23693D92A99C2D40070DB4F /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				F23693C82A8CD1C30070DB4F /* Cafe.swift */,
+				F23693D72A99AF590070DB4F /* Menu.swift */,
+				F23693D92A99C2D40070DB4F /* Tag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -554,9 +560,11 @@
 				F22F07D12A7FB0D7009136EF /* FilterView.swift in Sources */,
 				F22F07D92A7FCBD8009136EF /* RateAndFavorite.swift in Sources */,
 				F22F07B92A7DFC03009136EF /* CafeView.swift in Sources */,
+				F23693D82A99AF590070DB4F /* Menu.swift in Sources */,
 				F22F07D32A7FB17D009136EF /* CafeRow.swift in Sources */,
 				F22F07DD2A80979B009136EF /* CafeDetailView.swift in Sources */,
 				F23693AE2A8504220070DB4F /* UnderlineTextFieldView.swift in Sources */,
+				F23693DA2A99C2D40070DB4F /* Tag.swift in Sources */,
 				F23693B92A860B060070DB4F /* TagView.swift in Sources */,
 				F23693C92A8CD1C30070DB4F /* Cafe.swift in Sources */,
 			);

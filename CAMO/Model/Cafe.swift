@@ -23,6 +23,7 @@ struct Cafe : Codable {
             var address: String
             var contact: String
             var cafe_introduction: String
+            var reward: String
             var user_stamps: Int
             var required_stamps: Int
             var tags: [String]
@@ -36,6 +37,7 @@ struct Cafe : Codable {
                 address = ""
                 contact = ""
                 cafe_introduction = ""
+                reward = ""
                 user_stamps = 0
                 required_stamps = 0
                 tags = []

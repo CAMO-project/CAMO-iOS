@@ -21,8 +21,8 @@ struct Tags: View {
         .border(Color.black.opacity(0), width: 0)
         .cornerRadius(100)
         .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 0)
-        .padding(.bottom, 10)
-        .padding(.trailing, 10)
+        .padding(.bottom, 2)
+        .padding(.trailing, 2)
     }
 }
 
